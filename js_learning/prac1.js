@@ -1,5 +1,4 @@
 console.log("hello world");
-
 {
     var a = 100 
 }
@@ -10,7 +9,6 @@ const c = 23.78
 console.log(typeof a)
 console.log(b)
 console.log(c)
-
 
 // primitive data type
 
@@ -24,3 +22,15 @@ let i = Symbol("i am a student")    // symbol
 console.log(i)
 let j = undefined
 console.log(j)
+
+// object non primitive
+let dict1 = {"a1":"bike","a2":"car","a3":"bus"}
+
+console.log(dict1["a1"])
+
+dict1["a4"] = 'cycle' // adding new element
+
+console.log(dict1)
+
+let emp_obj = {}
+console.log(typeof emp_obj)
