@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      <table border="1px">
+        <caption>products</caption>
+        <thead>
+          <tr>
+            <th>index</th>
+            <th>name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>SSD</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>HDD</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>mouse</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>total-product</td>
+            <td>3</td>
+          </tr>
+        </tfoot>
+      </table>
+    </center>
+    <script>
+        let tbl = document.body.firstElementChild.firstElementChild
+        console.log(tbl)
+        console.log(tbl.rows)
+        console.log(tbl.rows[3].rowIndex)
+        console.log(tbl.caption)
+        console.log(tbl.tHead)
+        console.log(tbl.tBodies)
+        console.log(tbl.tFoot)
+        console.log(tbl.tBodies[0].rows)
+        console.log(tbl.tBodies[0].rows[0].cells)
+        console.log(tbl.tBodies[0].rows[2].sectionRowIndex)
+        console.log(tbl.tBodies[0].rows[0].cells[1].cellIndex)
+    </script>
+  </body>
+</html>

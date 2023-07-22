@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="cont" name="cls-cont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque temporibus earum ducimus laborum dolore dolores quod eos nihil cumque laboriosam cum excepturi veniam, sapiente esse quas natus, reiciendis, quo quaerat?</div>
+    
+    <script>
+        let c1 = document.getElementById("cont")
+        let c2 = document.getElementsByClassName("cont")
+        let c3 = document.getElementsByName("cont")
+
+        c1.style.background="black"
+        c3[0].style.color="white"
+        console.log(c2)
+    </script>
+</body>
+</html>
