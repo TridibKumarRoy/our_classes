@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+    <!-- Ciick
+    mouseOver
+    mouseOut
+    mouseDown
+    mouseUp -->
+
+    <div class="para">
+        <h1>this is a heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quidem dolorum dolorem sed molestias aliquam magni ad expedita autem! Natus assumenda labore quisquam, omnis adipisci similique rerum culpa tempora eius!</p>
+    </div>
+    <!-- <button id="btn" onclick="show()">click</button> -->
+    <button id="btn">click</button>
+
+    <script>
+
+        let paragraph = document.querySelector('.para')
+        
+
+        paragraph.addEventListener('click',function show1(){
+            alert("alart")
+            //console.log("haij")
+        })
+
+        
+        function show(){
+            if(document.body.firstElementChild.style.display == "none"){
+                document.body.firstElementChild.style.display = "block"
+                
+            }
+            else{
+                document.body.firstElementChild.style.display = "none"
+            }
+            
+        }
+
+    </script>
+
+</body>
+</html>

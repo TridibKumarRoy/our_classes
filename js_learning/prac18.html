@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="dv hs" id="id1" data-game="ludo">
+        <h5>this is class 1</h5>
+    </div>
+    <div class="dv">
+        <h5>this is class 2</h5>
+    </div>
+
+
+
+    <script>
+        let c= document.getElementsByClassName('dv')
+        //console.log(c)
+        //console.log(c[0])
+        //c[0].innerText = "this is class 100"
+        //console.log(c[0])
+
+        let d= document.body.querySelectorAll('.dv')
+        //let d1= document.body.querySelector('.dv')
+        console.log(d)
+        //console.log(d[1])
+
+        console.log(c[0].hasAttribute("class"))
+        console.log(c[0].hasAttribute("value"))
+        console.log(c[0].getAttribute("id"))
+        c[0].setAttribute("class","cls1 dv hs")
+        console.log(c[0].dataset.game)
+        console.log(c[0].hasAttribute("data-game")) 
+        
+    </script>
+</body>
+</html>
