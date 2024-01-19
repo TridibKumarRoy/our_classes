@@ -29,7 +29,7 @@ let dict1 = {"a1":"bike","a2":"car","a3":"bus"}
 console.log(dict1["a1"])
 
 dict1["a4"] = 'cycle' // adding new element
-
+dict1.a5 = "train"; // adding new element
 console.log(dict1)
 
 let emp_obj = {}
